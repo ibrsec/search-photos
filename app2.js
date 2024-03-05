@@ -13,30 +13,24 @@ clearButton.onclick = (e) => {
     input.focus();
 }
 
-//with promise
-searchButton.addEventListener("click", (e) => {
+//with async await
+searchButton.addEventListener("click", async(e) => {
   e.preventDefault();
   const value =  input.value.trim();
   imgContainer.textContent = "";
-  const getImages = fetch(`https://api.unsplash.com/search/photos?query=${value}`,{
+const getImagesJson = await(await fetch(`https://api.unsplash.com/search/photos?query=${value}`,{
     method:"GET",
     headers:{
         Authorization: "Client-ID a-R859OJIzz0JCRHXvxcf2pIkaGKJCtomb0MPaaEOAA"
     }
-  })
-  .then((response)=> response.json())
-    .then((data)=> {
-        console.log(data);
-        console.log(data.results);
-        console.log(typeof data.results);
-        console.log(Array.from(data.results));
-        Array.from(data.results).forEach(each => {
-            sendUrlToImg(each.urls.small);
+  })).json();
 
-        })
+console.log(getImagesJson);
 
-    })
-    .catch((error)=> console.log(error));
+Array.from(getImagesJson.results).forEach(each => {
+    sendUrlToImg(each.urls.small);
+
+})
 
     input.value = "";
 
