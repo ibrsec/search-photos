@@ -6,7 +6,8 @@ const imgContainer = document.querySelector("#img-wrapper");
 window.onload = () => {
     input.focus();
 }
-clearButton.onclick = () => {
+clearButton.onclick = (e) => {
+    e.preventDefault();
     imgContainer.textContent = "";
     input.value = "";
     input.focus();
