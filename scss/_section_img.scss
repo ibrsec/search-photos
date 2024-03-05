@@ -1,0 +1,38 @@
+section#img-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  gap: 1rem;
+  margin-top: 50px;
+  div {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid darkgrey;
+    background-color: $soft-white;
+    box-shadow: 1px 1px 5px gray;
+    @include imgHover;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  section#img-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 670px) {
+    section#img-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 500px) {
+    section#img-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
