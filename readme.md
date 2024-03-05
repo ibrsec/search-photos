@@ -84,7 +84,6 @@
 ## Project Skeleton 
 
 ```
-Google-Learning (folder)
 |----css
       |---style.css 
 |----scss
