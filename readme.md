@@ -15,7 +15,7 @@
     <a href="https://github.com/ibrsec/search-photos"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://ibrsec.github.io/search-photos/">View Demo</a>
+    <a href="https://search-photos-flax.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/ibrsec/search-photos/issues">Report Bug</a>
     ·
@@ -60,7 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![search-photos](./img/project.png)](https://ibrsec.github.io/search-photos/)
+[![search-photos](./img/project.png)](https://search-photos-flax.vercel.app/)
 
 
 
