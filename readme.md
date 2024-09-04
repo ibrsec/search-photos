@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ibrsec/search-photos/">
-    <img src="./img/seach.png.png" alt="Logo" width="200" >
+    <img src="./search.png" alt="Logo" width="200" >
   </a>
 
   <h3 align="center">Image Seach App</h3>
@@ -60,7 +60,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![search-photos](./img/project.png)](https://search-photos-flax.vercel.app/)
+[![search-photos](./project.png)](https://search-photos-flax.vercel.app/)
 
 
 
